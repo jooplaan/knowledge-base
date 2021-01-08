@@ -1,81 +1,79 @@
 <?php
 /**
- * Knowledge bank
+ * The plugin bootstrap file
  *
- * @package       KNOWLEDGEB
- * @author        Joop Laan
- * @license       gplv2
- * @version       1.0.0
+ * @link              https://www.jooplaan.com/
+ * @since             1.0.0
+ * @package           Knowledge_Bank
  *
  * @wordpress-plugin
- * Plugin Name:   Knowledge bank
- * Plugin URI:    https://mydomain.com
- * Description:   Custom post type for knowledge bank articles
- * Version:       1.0.0
- * Author:        Joop Laan
- * Author URI:    http://www.jooplaan.com/
- * Text Domain:   knowledge-bank
- * Domain Path:   /languages
- * License:       GPLv2
- * License URI:   https://www.gnu.org/licenses/gpl-2.0.html
- *
- * You should have received a copy of the GNU General Public License
- * along with Knowledge bank. If not, see <https://www.gnu.org/licenses/gpl-2.0.html/>.
+ * Plugin Name:       Knowledge Bank
+ * Plugin URI:        https://www.jooplaan.com/
+ * Description:       Post type article to create a Knowledge Bank.
+ * Version:           1.0.0
+ * Author:            Joop Laan
+ * Author URI:        https://www.jooplaan.com/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       knowledge-bank
+ * Domain Path:       /languages
  */
 
-// Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-/**
- * HELPER COMMENT START
- * 
- * This file contains the main information about the plugin.
- * It is used to register all components necessary to run the plugin.
- * 
- * The comment above contains all information about the plugin 
- * that are used by WordPress to differenciate the plugin and register it properly.
- * It also contains further PHPDocs parameter for a better documentation
- * 
- * The function KNOWLEDGEB() is the main function that you will be able to 
- * use throughout your plugin to extend the logic. Further information
- * about that is available within the sub classes.
- * 
- * HELPER COMMENT END
- */
-
-// Plugin name
-define( 'KNOWLEDGEB_NAME',			'Knowledge bank' );
-
-// Plugin version
-define( 'KNOWLEDGEB_VERSION',		'1.0.0' );
-
-// Plugin Root File
-define( 'KNOWLEDGEB_PLUGIN_FILE',	__FILE__ );
-
-// Plugin base
-define( 'KNOWLEDGEB_PLUGIN_BASE',	plugin_basename( KNOWLEDGEB_PLUGIN_FILE ) );
-
-// Plugin Folder Path
-define( 'KNOWLEDGEB_PLUGIN_DIR',	plugin_dir_path( KNOWLEDGEB_PLUGIN_FILE ) );
-
-// Plugin Folder URL
-define( 'KNOWLEDGEB_PLUGIN_URL',	plugin_dir_url( KNOWLEDGEB_PLUGIN_FILE ) );
-
-/**
- * Load the main class for the core functionality
- */
-require_once KNOWLEDGEB_PLUGIN_DIR . 'core/class-knowledge-bank.php';
-
-/**
- * The main function to load the only instance
- * of our master class.
- *
- * @author  Joop Laan
- * @since   1.0.0
- * @return  object|Knowledge_Bank
- */
-function KNOWLEDGEB() {
-	return Knowledge_Bank::instance();
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
-KNOWLEDGEB();
+/**
+ * Currently plugin version.
+ */
+define( 'KNOWLEDGE_BANK_VERSION', '1.0.0' );
+
+/**
+ * System path.
+ */
+define( 'KNOWLEDGE_BANK_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
+/**
+ * The code that runs during plugin activation.
+ * This action is documented in includes/class-knowledge-bank-activator.php
+ */
+function activate_knowledge_bank() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-knowledge-bank-activator.php';
+	Knowledge_Bank_Activator::activate();
+}
+
+/**
+ * The code that runs during plugin deactivation.
+ * This action is documented in includes/class-knowledge-bank-deactivator.php
+ */
+function deactivate_knowledge_bank() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-knowledge-bank-deactivator.php';
+	Knowledge_Bank_Deactivator::deactivate();
+}
+
+register_activation_hook( __FILE__, 'activate_knowledge_bank' );
+register_deactivation_hook( __FILE__, 'deactivate_knowledge_bank' );
+
+/**
+ * The core plugin class that is used to define internationalization,
+ * admin-specific hooks, and public-facing site hooks.
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-knowledge-bank.php';
+
+/**
+ * Begins execution of the plugin.
+ *
+ * Since everything within the plugin is registered via hooks,
+ * then kicking off the plugin from this point in the file does
+ * not affect the page life cycle.
+ *
+ * @since    1.0.0
+ */
+function run_knowledge_bank() {
+
+	$plugin = new Knowledge_Bank();
+	$plugin->run();
+
+}
+run_knowledge_bank();

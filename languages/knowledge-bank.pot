@@ -1,0 +1,139 @@
+# Copyright (C) 2021 Joop Laan
+# This file is distributed under the same license as the Knowledge Bank plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Knowledge Bank 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-bank\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-01-08T08:22:23+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: knowledge-bank\n"
+
+#. Plugin Name of the plugin
+msgid "Knowledge Bank"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.jooplaan.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
+msgstr ""
+
+#. Author of the plugin
+msgid "Joop Laan"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:65
+msgctxt "post type general name"
+msgid "Articles"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:66
+msgctxt "post type singular name"
+msgid "Article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:67
+msgctxt "admin menu"
+msgid "Articles"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:68
+msgctxt "add new on admin bar"
+msgid "Article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:69
+msgctxt "article"
+msgid "Add New"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:70
+msgid "Add New article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:71
+msgid "New article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:72
+msgid "Edit article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:73
+msgid "View article"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:74
+msgid "All articles"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:75
+msgid "Search articles"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:76
+msgid "Parent articles:"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:77
+msgid "No articles found."
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:78
+msgid "No articles found in Trash."
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:109
+msgctxt "taxonomy general name"
+msgid "Article categories"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:110
+msgctxt "taxonomy singular name"
+msgid "Article category"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:111
+msgid "Search article categories"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:112
+msgid "All article categories"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:113
+msgid "Parent article category"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:114
+msgid "Parent article category:"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:115
+msgid "Edit article category"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:116
+msgid "Update article category"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:117
+msgid "Add New article category"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:118
+msgid "New article category Name"
+msgstr ""
+
+#: includes/class-knowledge-bank-custom-post-type-article.php:119
+msgid "Article categories"
+msgstr ""
