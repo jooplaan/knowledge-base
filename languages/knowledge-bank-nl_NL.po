@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-bank\n"
-"POT-Creation-Date: 2021-01-08T21:14:32+00:00\n"
-"PO-Revision-Date: 2021-01-08 22:16+0100\n"
+"POT-Creation-Date: 2021-01-08T21:18:30+00:00\n"
+"PO-Revision-Date: 2021-01-08 22:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -21,9 +21,8 @@ msgid "Knowledge Bank"
 msgstr "Kennisbank"
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://www.jooplaan.com/"
-msgstr "https://www.jooplaan.com/"
+msgid "https://github.com/jooplaan/knowledge-bank"
+msgstr "https://github.com/jooplaan/knowledge-bank"
 
 #. Description of the plugin
 msgid "Post type article to create a Knowledge Bank."
@@ -32,6 +31,10 @@ msgstr "Berichttype artikel om een kennisbank mee te creëren."
 #. Author of the plugin
 msgid "Joop Laan"
 msgstr "Joop Laan"
+
+#. Author URI of the plugin
+msgid "https://www.jooplaan.com/"
+msgstr "https://www.jooplaan.com/"
 
 #: includes/class-knowledge-bank-custom-post-type-article.php:102
 msgctxt "post type general name"

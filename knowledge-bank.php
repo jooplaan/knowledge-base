@@ -8,7 +8,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Knowledge Bank
- * Plugin URI:        https://www.jooplaan.com/
+ * Plugin URI:        https://github.com/jooplaan/knowledge-bank
  * Description:       Post type article to create a Knowledge Bank.
  * Version:           1.0.0
  * Author:            Joop Laan
