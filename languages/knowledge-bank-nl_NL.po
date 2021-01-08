@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-bank\n"
-"POT-Creation-Date: 2021-01-08T08:22:23+00:00\n"
-"PO-Revision-Date: 2021-01-08 09:42+0100\n"
+"POT-Creation-Date: 2021-01-08T21:14:32+00:00\n"
+"PO-Revision-Date: 2021-01-08 22:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -26,120 +26,119 @@ msgid "https://www.jooplaan.com/"
 msgstr "https://www.jooplaan.com/"
 
 #. Description of the plugin
-msgid ""
-"This is a short description of what the plugin does. It's displayed in the "
-"WordPress admin area."
-msgstr ""
-"Dit is een korte beschrijving van wat de plugin doet. Het wordt weergegeven "
-"in de WordPress admin gebied."
+msgid "Post type article to create a Knowledge Bank."
+msgstr "Berichttype artikel om een kennisbank mee te creëren."
 
 #. Author of the plugin
 msgid "Joop Laan"
 msgstr "Joop Laan"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:65
+#: includes/class-knowledge-bank-custom-post-type-article.php:102
 msgctxt "post type general name"
 msgid "Articles"
 msgstr "Artikelen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:66
+#: includes/class-knowledge-bank-custom-post-type-article.php:103
 msgctxt "post type singular name"
 msgid "Article"
 msgstr "Artikel"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:67
+#: includes/class-knowledge-bank-custom-post-type-article.php:104
 msgctxt "admin menu"
 msgid "Articles"
 msgstr "Artikelen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:68
+#: includes/class-knowledge-bank-custom-post-type-article.php:105
 msgctxt "add new on admin bar"
 msgid "Article"
 msgstr "Artikel"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:69
+#: includes/class-knowledge-bank-custom-post-type-article.php:106
 msgctxt "article"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:70
+#: includes/class-knowledge-bank-custom-post-type-article.php:107
 msgid "Add New article"
 msgstr "Artikel toevoegen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:71
+#: includes/class-knowledge-bank-custom-post-type-article.php:108
 msgid "New article"
 msgstr "Nieuw artikel"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:72
+#: includes/class-knowledge-bank-custom-post-type-article.php:109
 msgid "Edit article"
 msgstr "Bewerk artikel"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:73
+#: includes/class-knowledge-bank-custom-post-type-article.php:110
 msgid "View article"
 msgstr "Bekijk artikel"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:74
+#: includes/class-knowledge-bank-custom-post-type-article.php:111
 msgid "All articles"
 msgstr "Alle artikelen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:75
+#: includes/class-knowledge-bank-custom-post-type-article.php:112
 msgid "Search articles"
 msgstr "Artikelen zoeken"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:76
+#: includes/class-knowledge-bank-custom-post-type-article.php:113
 msgid "Parent articles:"
 msgstr "Bovenliggende artikelen:"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:77
+#: includes/class-knowledge-bank-custom-post-type-article.php:114
 msgid "No articles found."
 msgstr "Geen artikelen gevonden."
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:78
+#: includes/class-knowledge-bank-custom-post-type-article.php:115
 msgid "No articles found in Trash."
 msgstr "Geen artikelen gevonden in de Prullenbak."
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:109
+#: includes/class-knowledge-bank-custom-post-type-article.php:147
 msgctxt "taxonomy general name"
 msgid "Article categories"
 msgstr "Artikel categorieën"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:110
+#: includes/class-knowledge-bank-custom-post-type-article.php:148
 msgctxt "taxonomy singular name"
 msgid "Article category"
 msgstr "Artikel categorie"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:111
+#: includes/class-knowledge-bank-custom-post-type-article.php:149
 msgid "Search article categories"
 msgstr "Zoek artikelcategorieën"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:112
+#: includes/class-knowledge-bank-custom-post-type-article.php:150
 msgid "All article categories"
 msgstr "Alle artikelcategorieën"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:113
+#: includes/class-knowledge-bank-custom-post-type-article.php:151
 msgid "Parent article category"
 msgstr "Bovenliggende categorie"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:114
+#: includes/class-knowledge-bank-custom-post-type-article.php:152
 msgid "Parent article category:"
 msgstr "Bovenliggende categorie:"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:115
+#: includes/class-knowledge-bank-custom-post-type-article.php:153
 msgid "Edit article category"
 msgstr "Bewerk artikelcategorie"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:116
+#: includes/class-knowledge-bank-custom-post-type-article.php:154
 msgid "Update article category"
 msgstr "Artikelcategorie updaten"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:117
+#: includes/class-knowledge-bank-custom-post-type-article.php:155
 msgid "Add New article category"
 msgstr "Nieuwe artikelcategorie toevoegen"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:118
+#: includes/class-knowledge-bank-custom-post-type-article.php:156
 msgid "New article category Name"
 msgstr "Nieuwe artikelcategorie Naam"
 
-#: includes/class-knowledge-bank-custom-post-type-article.php:119
+#: includes/class-knowledge-bank-custom-post-type-article.php:157
 msgid "Article categories"
 msgstr "Artikel categorieën"
+
+#~ msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
+#~ msgstr "Dit is een korte beschrijving van wat de plugin doet. Het wordt weergegeven in de WordPress admin gebied."
