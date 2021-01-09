@@ -184,7 +184,7 @@ class Knowledge_Base {
 		$this->loader->add_filter( 'get_the_archive_title', $plugin_public, 'knowledge_base_archive_title' );
 
 		// Also set the <title> tag.
-		$this->loader->add_filter( 'pre_get_document_title', $plugin_public, 'knowledge_base_archive_title_tag', 999 );
+		$this->loader->add_filter( 'pre_get_document_title', $plugin_public, 'knowledge_base_archive_title_tag', 9999 );
 
 	}
 
