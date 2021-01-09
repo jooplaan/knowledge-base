@@ -107,17 +107,15 @@ class Knowledge_Base_Public {
 	 * @param string $title       The title.
 	 */
 	public function knowledge_base_archive_title( $title ) {
-
+		$current_category = get_queried_object();
 		if ( is_post_type_archive( 'article' ) ) {
 
-			$current_category = get_queried_object();
 			if ( 'article' == $current_category->name ) {
-				$title = __( 'Knowledge Base', 'knowledge-base' );
+				$title = $this->set_title_archive( $title, 'h1-tag' );
 			}
 		} elseif ( is_tax( 'category-articles' ) ) {
 
-			$current_category = get_queried_object();
-			$title = __( 'Knowledge Base', 'knowledge-base' ) . ': ' . $current_category->name;
+			$title = $this->set_title_archive( $title, 'h1-tag' );
 		}
 
 		return $title;
@@ -131,23 +129,47 @@ class Knowledge_Base_Public {
 	 * @param string $title       The title.
 	 */
 	public function knowledge_base_archive_title_tag( $title ) {
-
+		$current_category = get_queried_object();
 		if ( is_post_type_archive( 'article' ) ) {
 
-			$current_category = get_queried_object();
 			if ( 'article' == $current_category->name ) {
-				$title = __( 'Knowledge Base', 'knowledge-base' );
-				$title = $title . ' · ' . get_bloginfo( 'name' );
+				$title = $this->set_title_archive( $title, 'title-tag' );
 			}
 		} elseif ( is_tax( 'category-articles' ) ) {
 
-			$current_category = get_queried_object();
-			$title = __( 'Knowledge Base', 'knowledge-base' ) . ': ' . $current_category->name;
-			$title = $title . ' · ' . get_bloginfo( 'name' );
+			$title = $this->set_title_archive( $title, 'title-tag' );
 		}
 
 		return $title;
 	}
 
+	/**
+	 * Custom titles for the Archive pages' <title> tag.
+	 *
+	 * @since    1.0.0
+	 *
+	 * @param string $title       The title.
+	 * @param string $context     The context.
+	 */
+	private function set_title_archive( $title, $context = '' ) {
+		$current_category = get_queried_object();
+		if ( is_post_type_archive( 'article' ) ) {
+
+			if ( 'article' == $current_category->name ) {
+				$title = __( 'Knowledge Base', 'knowledge-base' );
+				if ( 'title-tag' == $context ) {
+					$title = $title . ' · ' . get_bloginfo( 'name' );
+				}
+			}
+		} elseif ( is_tax( 'category-articles' ) ) {
+
+			$title = __( 'Knowledge Base', 'knowledge-base' ) . ': ' . $current_category->name;
+			if ( 'title-tag' == $context ) {
+				$title = $title . ' · ' . get_bloginfo( 'name' );
+			}
+		}
+
+		return $title;
+	}
 
 }
