@@ -1,11 +1,11 @@
 # Copyright (C) 2021 Joop Laan
-# This file is distributed under the same license as the Knowledge Base plugin.
+# This file is distributed under the same license as the Knowledge Bank plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Knowledge Base 1.0.0\n"
+"Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-base\n"
-"POT-Creation-Date: 2021-01-09T00:27:04+00:00\n"
-"PO-Revision-Date: 2021-01-09 01:29+0100\n"
+"POT-Creation-Date: 2021-01-09T01:04:11+00:00\n"
+"PO-Revision-Date: 2021-01-09 02:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -36,110 +36,114 @@ msgstr "Joop Laan"
 msgid "https://www.jooplaan.com/"
 msgstr "https://www.jooplaan.com/"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:102
+#: includes/class-knowledge-base-custom-post-type-article.php:98
+msgid "knowledge-base"
+msgstr "kennisbank"
+
+#: includes/class-knowledge-base-custom-post-type-article.php:103
 msgctxt "post type general name"
 msgid "Articles"
 msgstr "Artikelen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:103
+#: includes/class-knowledge-base-custom-post-type-article.php:104
 msgctxt "post type singular name"
 msgid "Article"
 msgstr "Artikel"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:104
+#: includes/class-knowledge-base-custom-post-type-article.php:105
 msgctxt "admin menu"
 msgid "Articles"
 msgstr "Artikelen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:105
+#: includes/class-knowledge-base-custom-post-type-article.php:106
 msgctxt "add new on admin bar"
 msgid "Article"
 msgstr "Artikel"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:106
+#: includes/class-knowledge-base-custom-post-type-article.php:107
 msgctxt "article"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:107
+#: includes/class-knowledge-base-custom-post-type-article.php:108
 msgid "Add New article"
 msgstr "Artikel toevoegen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:108
+#: includes/class-knowledge-base-custom-post-type-article.php:109
 msgid "New article"
 msgstr "Nieuw artikel"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:109
+#: includes/class-knowledge-base-custom-post-type-article.php:110
 msgid "Edit article"
 msgstr "Bewerk artikel"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:110
+#: includes/class-knowledge-base-custom-post-type-article.php:111
 msgid "View article"
 msgstr "Bekijk artikel"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:111
+#: includes/class-knowledge-base-custom-post-type-article.php:112
 msgid "All articles"
 msgstr "Alle artikelen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:112
+#: includes/class-knowledge-base-custom-post-type-article.php:113
 msgid "Search articles"
 msgstr "Artikelen zoeken"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:113
+#: includes/class-knowledge-base-custom-post-type-article.php:114
 msgid "Parent articles:"
 msgstr "Bovenliggende artikelen:"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:114
+#: includes/class-knowledge-base-custom-post-type-article.php:115
 msgid "No articles found."
 msgstr "Geen artikelen gevonden."
 
-#: includes/class-knowledge-base-custom-post-type-article.php:115
+#: includes/class-knowledge-base-custom-post-type-article.php:116
 msgid "No articles found in Trash."
 msgstr "Geen artikelen gevonden in de Prullenbak."
 
-#: includes/class-knowledge-base-custom-post-type-article.php:147
+#: includes/class-knowledge-base-custom-post-type-article.php:148
 msgctxt "taxonomy general name"
 msgid "Article categories"
 msgstr "Artikel categorieën"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:148
+#: includes/class-knowledge-base-custom-post-type-article.php:149
 msgctxt "taxonomy singular name"
 msgid "Article category"
 msgstr "Artikel categorie"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:149
+#: includes/class-knowledge-base-custom-post-type-article.php:150
 msgid "Search article categories"
 msgstr "Zoek artikelcategorieën"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:150
+#: includes/class-knowledge-base-custom-post-type-article.php:151
 msgid "All article categories"
 msgstr "Alle artikelcategorieën"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:151
+#: includes/class-knowledge-base-custom-post-type-article.php:152
 msgid "Parent article category"
 msgstr "Bovenliggende categorie"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:152
+#: includes/class-knowledge-base-custom-post-type-article.php:153
 msgid "Parent article category:"
 msgstr "Bovenliggende categorie:"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:153
+#: includes/class-knowledge-base-custom-post-type-article.php:154
 msgid "Edit article category"
 msgstr "Bewerk artikelcategorie"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:154
+#: includes/class-knowledge-base-custom-post-type-article.php:155
 msgid "Update article category"
 msgstr "Artikelcategorie updaten"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:155
+#: includes/class-knowledge-base-custom-post-type-article.php:156
 msgid "Add New article category"
 msgstr "Nieuwe artikelcategorie toevoegen"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:156
+#: includes/class-knowledge-base-custom-post-type-article.php:157
 msgid "New article category Name"
 msgstr "Nieuwe artikelcategorie Naam"
 
-#: includes/class-knowledge-base-custom-post-type-article.php:157
+#: includes/class-knowledge-base-custom-post-type-article.php:158
 msgid "Article categories"
 msgstr "Artikel categorieën"
 

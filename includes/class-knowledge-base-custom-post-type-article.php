@@ -95,6 +95,7 @@ class Knowledge_Base_Custom_Post_Type_Article {
 	 * Registers a Custom Post Type called article.
 	 */
 	public function register_custom_post_type() {
+		$slug = __( 'knowledge-base', 'knowledge-base' );
 		register_post_type(
 			'article',
 			array(
@@ -115,7 +116,7 @@ class Knowledge_Base_Custom_Post_Type_Article {
 					'not_found_in_trash' => __( 'No articles found in Trash.', 'knowledge-base' ),
 				),
 				// Frontend.
-				'rewrite'            => array( 'slug' => __( 'knowledge-base', 'knowledge-base' ) ),
+				'rewrite'            => array( 'slug' => $slug ),
 				'has_archive'        => true,
 				'public'             => true,
 				'publicly_queryable' => true,
