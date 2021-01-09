@@ -159,6 +159,7 @@ class Knowledge_Base_Custom_Post_Type_Article {
 		);
 
 		// Now register the taxonomy.
+		$slug = __( 'knowledge-base', 'knowledge-base' );
 		register_taxonomy(
 			'category-articles',
 			array( 'article' ),
@@ -170,7 +171,7 @@ class Knowledge_Base_Custom_Post_Type_Article {
 				'show_in_rest'      => true,
 				'show_admin_column' => true,
 				'query_var'         => true,
-				'rewrite'           => array( 'slug' => 'articles' ),
+				'rewrite'           => array( 'slug' => $slug ),
 			)
 		);
 	}
