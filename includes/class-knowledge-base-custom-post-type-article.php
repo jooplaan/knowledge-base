@@ -145,17 +145,17 @@ class Knowledge_Base_Custom_Post_Type_Article {
 	 */
 	public function create_article_hierarchical_taxonomy() {
 		$labels = array(
-			'name'              => _x( 'Article categories', 'taxonomy general name', 'knowledge-base' ),
-			'singular_name'     => _x( 'Article category', 'taxonomy singular name', 'knowledge-base' ),
+			'name'              => _x( 'Knowledge base categories', 'taxonomy general name', 'knowledge-base' ),
+			'singular_name'     => _x( 'Knowledge base category', 'taxonomy singular name', 'knowledge-base' ),
 			'search_items'      => __( 'Search article categories', 'knowledge-base' ),
-			'all_items'         => __( 'All article categories', 'knowledge-base' ),
-			'parent_item'       => __( 'Parent article category', 'knowledge-base' ),
-			'parent_item_colon' => __( 'Parent article category:', 'knowledge-base' ),
-			'edit_item'         => __( 'Edit article category', 'knowledge-base' ),
-			'update_item'       => __( 'Update article category', 'knowledge-base' ),
-			'add_new_item'      => __( 'Add New article category', 'knowledge-base' ),
-			'new_item_name'     => __( 'New article category Name', 'knowledge-base' ),
-			'menu_name'         => __( 'Article categories', 'knowledge-base' ),
+			'all_items'         => __( 'All knowledge base categories', 'knowledge-base' ),
+			'parent_item'       => __( 'Parent knowledge base article category', 'knowledge-base' ),
+			'parent_item_colon' => __( 'Parent knowledge base article category:', 'knowledge-base' ),
+			'edit_item'         => __( 'Edit knowledge base article category', 'knowledge-base' ),
+			'update_item'       => __( 'Update knowledge base article category', 'knowledge-base' ),
+			'add_new_item'      => __( 'Add new knowledge base article category', 'knowledge-base' ),
+			'new_item_name'     => __( 'New knowledge base article category Name', 'knowledge-base' ),
+			'menu_name'         => __( 'Knowledge base categories', 'knowledge-base' ),
 		);
 
 		// Now register the taxonomy.

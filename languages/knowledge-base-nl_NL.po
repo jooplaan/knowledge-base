@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-base\n"
-"POT-Creation-Date: 2021-01-09T12:32:51+00:00\n"
-"PO-Revision-Date: 2021-01-09 13:33+0100\n"
+"POT-Creation-Date: 2021-01-09T17:29:56+00:00\n"
+"PO-Revision-Date: 2021-01-09 18:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
-#: public/class-knowledge-base-public.php:115
-#: public/class-knowledge-base-public.php:120
+#: public/class-knowledge-base-public.php:159
+#: public/class-knowledge-base-public.php:166
 msgid "Knowledge Base"
 msgstr "Kennisbank"
 
@@ -105,53 +105,67 @@ msgstr "Geen artikelen gevonden in de Prullenbak."
 
 #: includes/class-knowledge-base-custom-post-type-article.php:148
 msgctxt "taxonomy general name"
-msgid "Article categories"
-msgstr "Artikel categorieën"
+msgid "Knowledge base categories"
+msgstr "Kennisbank categorieën"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:149
 msgctxt "taxonomy singular name"
-msgid "Article category"
-msgstr "Artikel categorie"
+msgid "Knowledge base category"
+msgstr "Kennisbank categorie"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:150
 msgid "Search article categories"
 msgstr "Zoek artikelcategorieën"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:151
-msgid "All article categories"
-msgstr "Alle artikelcategorieën"
+msgid "All knowledge base categories"
+msgstr "Alle kennisbasiscategorieën"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:152
-msgid "Parent article category"
-msgstr "Bovenliggende categorie"
+msgid "Parent knowledge base article category"
+msgstr "Bovenliggende kennisbank categorie"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:153
-msgid "Parent article category:"
-msgstr "Bovenliggende categorie:"
+msgid "Parent knowledge base article category:"
+msgstr "Bovenliggende kennisbank categorie:"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:154
-msgid "Edit article category"
-msgstr "Bewerk artikelcategorie"
+msgid "Edit knowledge base article category"
+msgstr "Bewerk kennisbank artikel categorie"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:155
-msgid "Update article category"
-msgstr "Artikelcategorie updaten"
+msgid "Update knowledge base article category"
+msgstr "Kennisbank artikel categorie updaten"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:156
-msgid "Add New article category"
-msgstr "Nieuwe artikelcategorie toevoegen"
+msgid "Add new knowledge base article category"
+msgstr "Nieuwe kennisbank artikel categorie toevoegen"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:157
-msgid "New article category Name"
-msgstr "Nieuwe artikelcategorie Naam"
+msgid "New knowledge base article category Name"
+msgstr "Nieuwe kennisbank artikel categorie naam"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:158
-msgid "Article categories"
-msgstr "Artikel categorieën"
+msgid "Knowledge base categories"
+msgstr "Kennisbank categorieën"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:162
 msgid "knowledge-base-category"
 msgstr "kennisbank-categorie"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Article categories"
+#~ msgstr "Kennisbank categorieën"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Article category"
+#~ msgstr "Kennisbank categorie"
+
+#~ msgid "All article categories"
+#~ msgstr "Alle artikelcategorieën"
+
+#~ msgid "Article categories"
+#~ msgstr "Artikel categorieën"
 
 #~ msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
 #~ msgstr "Dit is een korte beschrijving van wat de plugin doet. Het wordt weergegeven in de WordPress admin gebied."
