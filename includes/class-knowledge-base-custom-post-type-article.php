@@ -100,8 +100,8 @@ class Knowledge_Base_Custom_Post_Type_Article {
 			'article',
 			array(
 				'labels' => array(
-					'name'               => _x( 'Articles', 'post type general name', 'knowledge-base' ),
-					'singular_name'      => _x( 'Article', 'post type singular name', 'knowledge-base' ),
+					'name'               => _x( 'Knowledge Base', 'post type general name', 'knowledge-base' ),
+					'singular_name'      => _x( 'Knowledge Base article', 'post type singular name', 'knowledge-base' ),
 					'menu_name'          => _x( 'Articles', 'admin menu', 'knowledge-base' ),
 					'name_admin_bar'     => _x( 'Article', 'add new on admin bar', 'knowledge-base' ),
 					'add_new'            => _x( 'Add New', 'article', 'knowledge-base' ),

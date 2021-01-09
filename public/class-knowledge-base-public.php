@@ -111,7 +111,7 @@ class Knowledge_Base_Public {
 		if ( is_post_type_archive( 'article' ) ) {
 
 			if ( 'article' == $current_category->name ) {
-				$title = $this->set_title_archive( $title, 'h1-tag' );
+				$title = $this->set_title_archive( $title );
 			}
 		} elseif ( is_tax( 'category-articles' ) ) {
 

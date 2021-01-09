@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-base\n"
-"POT-Creation-Date: 2021-01-09T17:29:56+00:00\n"
-"PO-Revision-Date: 2021-01-09 18:33+0100\n"
+"POT-Creation-Date: 2021-01-09T18:14:29+00:00\n"
+"PO-Revision-Date: 2021-01-09 19:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -44,13 +44,13 @@ msgstr "kennisbank"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:103
 msgctxt "post type general name"
-msgid "Articles"
-msgstr "Artikelen"
+msgid "Knowledge Base"
+msgstr "Kennisbank"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:104
 msgctxt "post type singular name"
-msgid "Article"
-msgstr "Artikel"
+msgid "Knowledge Base article"
+msgstr "Kennisbank artikel"
 
 #: includes/class-knowledge-base-custom-post-type-article.php:105
 msgctxt "admin menu"
@@ -152,6 +152,14 @@ msgstr "Kennisbank categorieën"
 #: includes/class-knowledge-base-custom-post-type-article.php:162
 msgid "knowledge-base-category"
 msgstr "kennisbank-categorie"
+
+#~ msgctxt "post type general name"
+#~ msgid "Articles"
+#~ msgstr "Artikelen"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Article"
+#~ msgstr "Artikel"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Article categories"
