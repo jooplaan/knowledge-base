@@ -178,6 +178,7 @@ class Knowledge_Base {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
+		$this->loader->add_action( 'get_the_archive_title', $plugin_public, 'knowledge_base_archive_title' );
 	}
 
 	/**
