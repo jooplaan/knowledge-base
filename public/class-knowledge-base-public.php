@@ -122,4 +122,32 @@ class Knowledge_Base_Public {
 
 		return $title;
 	}
+
+	/**
+	 * Custom titles for the Archive pages' <title> tag.
+	 *
+	 * @since    1.0.0
+	 *
+	 * @param string $title       The title.
+	 */
+	public function knowledge_base_archive_title_tag( $title ) {
+
+		if ( is_post_type_archive( 'article' ) ) {
+
+			$current_category = get_queried_object();
+			if ( 'article' == $current_category->name ) {
+				$title = __( 'Knowledge Base', 'knowledge-base' );
+				$title = $title . ' · ' . get_bloginfo( 'name' );
+			}
+		} elseif ( is_tax( 'category-articles' ) ) {
+
+			$current_category = get_queried_object();
+			$title = __( 'Knowledge Base', 'knowledge-base' ) . ': ' . $current_category->name;
+			$title = $title . ' · ' . get_bloginfo( 'name' );
+		}
+
+		return $title;
+	}
+
+
 }

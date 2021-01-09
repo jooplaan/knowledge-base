@@ -114,7 +114,6 @@ class Knowledge_Base {
 		 * The class responsible for defining the custom post type article.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-custom-post-type-article.php';
-		$articles = new Knowledge_Base_Custom_Post_Type_Article( $this->get_plugin_name(), $this->get_version() );
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
@@ -175,10 +174,18 @@ class Knowledge_Base {
 
 		$plugin_public = new Knowledge_Base_Public( $this->get_plugin_name(), $this->get_version() );
 
+		// Enable the post type.
+		$articles = new Knowledge_Base_Custom_Post_Type_Article( $this->get_plugin_name(), $this->get_version() );
+
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
-		$this->loader->add_action( 'get_the_archive_title', $plugin_public, 'knowledge_base_archive_title' );
+		// Custom page titles for archive pages.
+		$this->loader->add_filter( 'get_the_archive_title', $plugin_public, 'knowledge_base_archive_title' );
+
+		// Also set the <title> tag.
+		$this->loader->add_filter( 'pre_get_document_title', $plugin_public, 'knowledge_base_archive_title_tag' );
+
 	}
 
 	/**
