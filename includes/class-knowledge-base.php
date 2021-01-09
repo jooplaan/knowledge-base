@@ -8,8 +8,8 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  */
 
 /**
@@ -22,11 +22,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  * @author     Joop Laan <joop@interconnecting.systems>
  */
-class Knowledge_Bank {
+class Knowledge_Base {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -34,7 +34,7 @@ class Knowledge_Bank {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Knowledge_Bank_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Knowledge_Base_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -66,12 +66,12 @@ class Knowledge_Bank {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'KNOWLEDGE_BANK_VERSION' ) ) {
-			$this->version = KNOWLEDGE_BANK_VERSION;
+		if ( defined( 'KNOWLEDGE_BASE_VERSION' ) ) {
+			$this->version = KNOWLEDGE_BASE_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'knowledge-bank';
+		$this->plugin_name = 'knowledge-base';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -85,10 +85,10 @@ class Knowledge_Bank {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Knowledge_Bank_Loader. Orchestrates the hooks of the plugin.
-	 * - Knowledge_Bank_I18n. Defines internationalization functionality.
-	 * - Knowledge_Bank_Admin. Defines all hooks for the admin area.
-	 * - Knowledge_Bank_Public. Defines all hooks for the public side of the site.
+	 * - Knowledge_Base_Loader. Orchestrates the hooks of the plugin.
+	 * - Knowledge_Base_I18n. Defines internationalization functionality.
+	 * - Knowledge_Base_Admin. Defines all hooks for the admin area.
+	 * - Knowledge_Base_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -102,39 +102,39 @@ class Knowledge_Bank {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-bank-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-bank-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-i18n.php';
 
 		/**
 		 * The class responsible for defining the custom post type article.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-bank-custom-post-type-article.php';
-		$articles = new Knowledge_Bank_Custom_Post_Type_Article( $this->get_plugin_name(), $this->get_version() );
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-custom-post-type-article.php';
+		$articles = new Knowledge_Base_Custom_Post_Type_Article( $this->get_plugin_name(), $this->get_version() );
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-knowledge-bank-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-knowledge-base-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-knowledge-bank-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-knowledge-base-public.php';
 
-		$this->loader = new Knowledge_Bank_Loader();
+		$this->loader = new Knowledge_Base_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Knowledge_Bank_i18n class in order to set the domain and to register the hook
+	 * Uses the Knowledge_Base_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -142,7 +142,7 @@ class Knowledge_Bank {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Knowledge_Bank_I18n();
+		$plugin_i18n = new Knowledge_Base_I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -157,7 +157,7 @@ class Knowledge_Bank {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Knowledge_Bank_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Knowledge_Base_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -173,7 +173,7 @@ class Knowledge_Bank {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Knowledge_Bank_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Knowledge_Base_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -204,7 +204,7 @@ class Knowledge_Bank {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Knowledge_Bank_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Knowledge_Base_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

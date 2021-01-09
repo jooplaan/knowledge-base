@@ -5,8 +5,8 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  */
 
 /**
@@ -15,11 +15,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  * @author     Joop Laan <joop@interconnecting.systems>
  */
-class Knowledge_Bank_Deactivator {
+class Knowledge_Base_Deactivator {
 
 	/**
 	 * Short Description. (use period)

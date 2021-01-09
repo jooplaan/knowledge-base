@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Provide a public-facing view for the plugin
  *
@@ -8,9 +7,10 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/public/partials
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/public/partials
  */
+
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->

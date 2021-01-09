@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Fired when the plugin is uninstalled.
  *
@@ -22,7 +21,7 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
+ * @package    Knowledge_Base
  */
 
 // If uninstall not called from WordPress, then exit.

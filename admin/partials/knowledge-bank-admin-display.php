@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Provide a admin area view for the plugin
  *
@@ -8,9 +7,10 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/admin/partials
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/admin/partials
  */
+
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->

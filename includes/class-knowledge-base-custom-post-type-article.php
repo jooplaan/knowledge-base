@@ -5,8 +5,8 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  */
 
 /**
@@ -15,10 +15,10 @@
  * @link       https://www.jooplaan.com/
  * @since      1.0.0
  *
- * @package    Knowledge_Bank
- * @subpackage Knowledge_Bank/includes
+ * @package    Knowledge_Base
+ * @subpackage Knowledge_Base/includes
  */
-class Knowledge_Bank_Custom_Post_Type_Article {
+class Knowledge_Base_Custom_Post_Type_Article {
 
 	/**
 	 * The ID of this plugin.
@@ -99,23 +99,23 @@ class Knowledge_Bank_Custom_Post_Type_Article {
 			'article',
 			array(
 				'labels' => array(
-					'name'               => _x( 'Articles', 'post type general name', 'knowledge-bank' ),
-					'singular_name'      => _x( 'Article', 'post type singular name', 'knowledge-bank' ),
-					'menu_name'          => _x( 'Articles', 'admin menu', 'knowledge-bank' ),
-					'name_admin_bar'     => _x( 'Article', 'add new on admin bar', 'knowledge-bank' ),
-					'add_new'            => _x( 'Add New', 'article', 'knowledge-bank' ),
-					'add_new_item'       => __( 'Add New article', 'knowledge-bank' ),
-					'new_item'           => __( 'New article', 'knowledge-bank' ),
-					'edit_item'          => __( 'Edit article', 'knowledge-bank' ),
-					'view_item'          => __( 'View article', 'knowledge-bank' ),
-					'all_items'          => __( 'All articles', 'knowledge-bank' ),
-					'search_items'       => __( 'Search articles', 'knowledge-bank' ),
-					'parent_item_colon'  => __( 'Parent articles:', 'knowledge-bank' ),
-					'not_found'          => __( 'No articles found.', 'knowledge-bank' ),
-					'not_found_in_trash' => __( 'No articles found in Trash.', 'knowledge-bank' ),
+					'name'               => _x( 'Articles', 'post type general name', 'knowledge-base' ),
+					'singular_name'      => _x( 'Article', 'post type singular name', 'knowledge-base' ),
+					'menu_name'          => _x( 'Articles', 'admin menu', 'knowledge-base' ),
+					'name_admin_bar'     => _x( 'Article', 'add new on admin bar', 'knowledge-base' ),
+					'add_new'            => _x( 'Add New', 'article', 'knowledge-base' ),
+					'add_new_item'       => __( 'Add New article', 'knowledge-base' ),
+					'new_item'           => __( 'New article', 'knowledge-base' ),
+					'edit_item'          => __( 'Edit article', 'knowledge-base' ),
+					'view_item'          => __( 'View article', 'knowledge-base' ),
+					'all_items'          => __( 'All articles', 'knowledge-base' ),
+					'search_items'       => __( 'Search articles', 'knowledge-base' ),
+					'parent_item_colon'  => __( 'Parent articles:', 'knowledge-base' ),
+					'not_found'          => __( 'No articles found.', 'knowledge-base' ),
+					'not_found_in_trash' => __( 'No articles found in Trash.', 'knowledge-base' ),
 				),
 				// Frontend.
-				'rewrite'            => array( 'slug' => 'articles' ),
+				'rewrite'            => array( 'slug' => __( 'knowledge-base', 'knowledge-base' ) ),
 				'has_archive'        => true,
 				'public'             => true,
 				'publicly_queryable' => true,
@@ -144,17 +144,17 @@ class Knowledge_Bank_Custom_Post_Type_Article {
 	 */
 	public function create_article_hierarchical_taxonomy() {
 		$labels = array(
-			'name'              => _x( 'Article categories', 'taxonomy general name', 'knowledge-bank' ),
-			'singular_name'     => _x( 'Article category', 'taxonomy singular name', 'knowledge-bank' ),
-			'search_items'      => __( 'Search article categories', 'knowledge-bank' ),
-			'all_items'         => __( 'All article categories', 'knowledge-bank' ),
-			'parent_item'       => __( 'Parent article category', 'knowledge-bank' ),
-			'parent_item_colon' => __( 'Parent article category:', 'knowledge-bank' ),
-			'edit_item'         => __( 'Edit article category', 'knowledge-bank' ),
-			'update_item'       => __( 'Update article category', 'knowledge-bank' ),
-			'add_new_item'      => __( 'Add New article category', 'knowledge-bank' ),
-			'new_item_name'     => __( 'New article category Name', 'knowledge-bank' ),
-			'menu_name'         => __( 'Article categories', 'knowledge-bank' ),
+			'name'              => _x( 'Article categories', 'taxonomy general name', 'knowledge-base' ),
+			'singular_name'     => _x( 'Article category', 'taxonomy singular name', 'knowledge-base' ),
+			'search_items'      => __( 'Search article categories', 'knowledge-base' ),
+			'all_items'         => __( 'All article categories', 'knowledge-base' ),
+			'parent_item'       => __( 'Parent article category', 'knowledge-base' ),
+			'parent_item_colon' => __( 'Parent article category:', 'knowledge-base' ),
+			'edit_item'         => __( 'Edit article category', 'knowledge-base' ),
+			'update_item'       => __( 'Update article category', 'knowledge-base' ),
+			'add_new_item'      => __( 'Add New article category', 'knowledge-base' ),
+			'new_item_name'     => __( 'New article category Name', 'knowledge-base' ),
+			'menu_name'         => __( 'Article categories', 'knowledge-base' ),
 		);
 
 		// Now register the taxonomy.
