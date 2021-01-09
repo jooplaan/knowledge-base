@@ -1,18 +1,17 @@
 ## Knowledge Base
 
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://www.jooplaan.com/
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+A WordPress plugin that creates a custom post type called Article.
 
 ## Description
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+Light weight solution for a generic extra post type.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and Markdown parsed.
+Use when you use look for having only one more post type on your website, next to the default two post types in Wordpress (post and pages). For more complex solutions, use a plugin like [Toolset](https://toolset.com/) or [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/), hire a developer, or code it yourself.
+
+## Installation
+
+* [Download zip file](https://github.com/jooplaan/knowledge-base/archive/main.zip)
+* Upload the zip file as a new plugin in your WordPress admin area and enable it
+
+
+
