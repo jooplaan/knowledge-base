@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-base\n"
-"POT-Creation-Date: 2021-01-09T01:04:11+00:00\n"
-"PO-Revision-Date: 2021-01-09 09:29+0100\n"
+"POT-Creation-Date: 2021-01-09T12:32:51+00:00\n"
+"PO-Revision-Date: 2021-01-09 13:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -17,6 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
+#: public/class-knowledge-base-public.php:115
+#: public/class-knowledge-base-public.php:120
 msgid "Knowledge Base"
 msgstr "Kennisbank"
 
@@ -146,6 +148,10 @@ msgstr "Nieuwe artikelcategorie Naam"
 #: includes/class-knowledge-base-custom-post-type-article.php:158
 msgid "Article categories"
 msgstr "Artikel categorieën"
+
+#: includes/class-knowledge-base-custom-post-type-article.php:162
+msgid "knowledge-base-category"
+msgstr "kennisbank-categorie"
 
 #~ msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
 #~ msgstr "Dit is een korte beschrijving van wat de plugin doet. Het wordt weergegeven in de WordPress admin gebied."
