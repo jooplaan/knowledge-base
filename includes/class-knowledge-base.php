@@ -116,6 +116,11 @@ class Knowledge_Base {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-custom-post-type-article.php';
 
 		/**
+		 * The class responsible for defining the Related Article Widget
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-knowledge-base-widget-related-articles.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-knowledge-base-admin.php';
