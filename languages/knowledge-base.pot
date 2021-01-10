@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-09T18:14:29+00:00\n"
+"POT-Creation-Date: 2021-01-10T08:48:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: knowledge-base\n"
@@ -149,4 +149,20 @@ msgstr ""
 
 #: includes/class-knowledge-base-custom-post-type-article.php:162
 msgid "knowledge-base-category"
+msgstr ""
+
+#: includes/class-knowledge-base-widget-related-articles.php:42
+msgid "Related articles by category."
+msgstr ""
+
+#: includes/class-knowledge-base-widget-related-articles.php:45
+msgid "Related Articles"
+msgstr ""
+
+#: includes/class-knowledge-base-widget-related-articles.php:63
+msgid "Related articles"
+msgstr ""
+
+#: includes/class-knowledge-base-widget-related-articles.php:235
+msgid "Display post date"
 msgstr ""

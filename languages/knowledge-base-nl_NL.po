@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Knowledge Bank 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/knowledge-base\n"
-"POT-Creation-Date: 2021-01-09T18:14:29+00:00\n"
-"PO-Revision-Date: 2021-01-09 19:15+0100\n"
+"POT-Creation-Date: 2021-01-10T08:48:51+00:00\n"
+"PO-Revision-Date: 2021-01-10 09:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -152,6 +152,22 @@ msgstr "Kennisbank categorieën"
 #: includes/class-knowledge-base-custom-post-type-article.php:162
 msgid "knowledge-base-category"
 msgstr "kennisbank-categorie"
+
+#: includes/class-knowledge-base-widget-related-articles.php:42
+msgid "Related articles by category."
+msgstr "Gerelateerde artikelen door categorie."
+
+#: includes/class-knowledge-base-widget-related-articles.php:45
+msgid "Related Articles"
+msgstr "Gerelateerde artikelen"
+
+#: includes/class-knowledge-base-widget-related-articles.php:63
+msgid "Related articles"
+msgstr "Gerelateerde artikelen"
+
+#: includes/class-knowledge-base-widget-related-articles.php:235
+msgid "Display post date"
+msgstr "Toon datum"
 
 #~ msgctxt "post type general name"
 #~ msgid "Articles"
