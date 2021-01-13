@@ -53,12 +53,21 @@ class Knowledge_Base_Custom_Post_Type_Article {
 			array( $this, 'register_custom_post_type' )
 		);
 
-		// Add taxonomy for article post type.
+		// Add categories for article post type.
 		add_action(
 			'init',
 			array(
 				$this,
 				'create_article_hierarchical_taxonomy',
+			)
+		);
+
+		// Add tags for article post type.
+		add_action(
+			'init',
+			array(
+				$this,
+				'create_article_tags_taxonomy',
 			)
 		);
 
@@ -141,7 +150,45 @@ class Knowledge_Base_Custom_Post_Type_Article {
 	}
 
 	/**
-	 * Registers a category for article post type.category-articles
+	 * Registers tags for article post type
+	 */
+	public function create_article_tags_taxonomy() {
+		$labels = array(
+			'name'              => _x( 'Knowledge base tags', 'taxonomy general name', 'knowledge-base' ),
+			'singular_name'     => _x( 'Knowledge base tag', 'taxonomy singular name', 'knowledge-base' ),
+			'search_items'      => __( 'Search article tags', 'knowledge-base' ),
+			'all_items'         => __( 'All knowledge base tags', 'knowledge-base' ),
+			'parent_item'       => __( 'Parent knowledge base article tag', 'knowledge-base' ),
+			'parent_item_colon' => __( 'Parent knowledge base article tag:', 'knowledge-base' ),
+			'edit_item'         => __( 'Edit knowledge base article tag', 'knowledge-base' ),
+			'update_item'       => __( 'Update knowledge base article tag', 'knowledge-base' ),
+			'add_new_item'      => __( 'Add new knowledge base article tag', 'knowledge-base' ),
+			'new_item_name'     => __( 'New knowledge base article tag Name', 'knowledge-base' ),
+			'menu_name'         => __( 'Knowledge base tags', 'knowledge-base' ),
+		);
+
+		// Now register the taxonomy.
+		$slug = __( 'knowledge-base-tag', 'knowledge-base' );
+		register_taxonomy(
+			'category-tags',
+			array( 'article' ),
+			array(
+				'hierarchical'          => false,
+				'labels'                => $labels,
+				'public'                => true,
+				'show_ui'               => true,
+				'show_in_rest'          => true,
+				'show_admin_column'     => true,
+				'query_var'             => true,
+				'update_count_callback' => '_update_post_term_count',
+				'rewrite'               => array( 'slug' => $slug ),
+			)
+		);
+	}
+
+
+	/**
+	 * Registers tags for article post type
 	 */
 	public function create_article_hierarchical_taxonomy() {
 		$labels = array(
@@ -175,5 +222,4 @@ class Knowledge_Base_Custom_Post_Type_Article {
 			)
 		);
 	}
-
 }

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-10T08:48:51+00:00\n"
+"POT-Creation-Date: 2021-01-13T15:39:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: knowledge-base\n"
@@ -36,118 +36,168 @@ msgstr ""
 msgid "https://www.jooplaan.com/"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:98
+#: includes/class-knowledge-base-custom-post-type-article.php:107
 msgid "knowledge-base"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:103
+#: includes/class-knowledge-base-custom-post-type-article.php:112
 msgctxt "post type general name"
 msgid "Knowledge Base"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:104
+#: includes/class-knowledge-base-custom-post-type-article.php:113
 msgctxt "post type singular name"
 msgid "Knowledge Base article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:105
+#: includes/class-knowledge-base-custom-post-type-article.php:114
 msgctxt "admin menu"
 msgid "Articles"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:106
+#: includes/class-knowledge-base-custom-post-type-article.php:115
 msgctxt "add new on admin bar"
 msgid "Article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:107
+#: includes/class-knowledge-base-custom-post-type-article.php:116
 msgctxt "article"
 msgid "Add New"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:108
+#: includes/class-knowledge-base-custom-post-type-article.php:117
 msgid "Add New article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:109
+#: includes/class-knowledge-base-custom-post-type-article.php:118
 msgid "New article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:110
+#: includes/class-knowledge-base-custom-post-type-article.php:119
 msgid "Edit article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:111
+#: includes/class-knowledge-base-custom-post-type-article.php:120
 msgid "View article"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:112
+#: includes/class-knowledge-base-custom-post-type-article.php:121
 msgid "All articles"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:113
+#: includes/class-knowledge-base-custom-post-type-article.php:122
 msgid "Search articles"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:114
+#: includes/class-knowledge-base-custom-post-type-article.php:123
 msgid "Parent articles:"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:115
+#: includes/class-knowledge-base-custom-post-type-article.php:124
 msgid "No articles found."
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:116
+#: includes/class-knowledge-base-custom-post-type-article.php:125
 msgid "No articles found in Trash."
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:148
+#: includes/class-knowledge-base-custom-post-type-article.php:157
+msgctxt "taxonomy general name"
+msgid "Knowledge base tags"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:158
+msgctxt "taxonomy singular name"
+msgid "Knowledge base tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:159
+msgid "Search article tags"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:160
+msgid "All knowledge base tags"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:161
+msgid "Parent knowledge base article tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:162
+msgid "Parent knowledge base article tag:"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:163
+msgid "Edit knowledge base article tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:164
+msgid "Update knowledge base article tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:165
+msgid "Add new knowledge base article tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:166
+msgid "New knowledge base article tag Name"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:167
+msgid "Knowledge base tags"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:171
+msgid "knowledge-base-tag"
+msgstr ""
+
+#: includes/class-knowledge-base-custom-post-type-article.php:195
 msgctxt "taxonomy general name"
 msgid "Knowledge base categories"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:149
+#: includes/class-knowledge-base-custom-post-type-article.php:196
 msgctxt "taxonomy singular name"
 msgid "Knowledge base category"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:150
+#: includes/class-knowledge-base-custom-post-type-article.php:197
 msgid "Search article categories"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:151
+#: includes/class-knowledge-base-custom-post-type-article.php:198
 msgid "All knowledge base categories"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:152
+#: includes/class-knowledge-base-custom-post-type-article.php:199
 msgid "Parent knowledge base article category"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:153
+#: includes/class-knowledge-base-custom-post-type-article.php:200
 msgid "Parent knowledge base article category:"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:154
+#: includes/class-knowledge-base-custom-post-type-article.php:201
 msgid "Edit knowledge base article category"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:155
+#: includes/class-knowledge-base-custom-post-type-article.php:202
 msgid "Update knowledge base article category"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:156
+#: includes/class-knowledge-base-custom-post-type-article.php:203
 msgid "Add new knowledge base article category"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:157
+#: includes/class-knowledge-base-custom-post-type-article.php:204
 msgid "New knowledge base article category Name"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:158
+#: includes/class-knowledge-base-custom-post-type-article.php:205
 msgid "Knowledge base categories"
 msgstr ""
 
-#: includes/class-knowledge-base-custom-post-type-article.php:162
+#: includes/class-knowledge-base-custom-post-type-article.php:209
 msgid "knowledge-base-category"
 msgstr ""
 
